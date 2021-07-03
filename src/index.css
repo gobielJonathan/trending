@@ -19,7 +19,7 @@ body {
 
 main {
   border-radius: 10px;
-  box-shadow: 0 0 10px rgb(0, 0, 0, .2);
+  box-shadow: var(--bx);
   height: 100%;
   display: flex;
 }
@@ -42,4 +42,10 @@ a {
 .content{
   width: 100%;
   padding: 1.5rem;
+  overflow-y: auto
+}
+
+:root{
+  --bx: 0 0 10px rgb(0 0 0 / 20%);
+  --bg-dark : #3C5186;
 }

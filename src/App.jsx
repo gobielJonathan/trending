@@ -1,6 +1,6 @@
 import Aside from "./component/aside";
 import { Switch, Route } from 'react-router-dom'
-import Film from "./pages/film.page";
+import Film from "./pages/film";
 
 function App() {
   return (

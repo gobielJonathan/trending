@@ -1,0 +1,29 @@
+.tab{
+    border-radius: 40px;
+    border: 1px solid  var(--bg-dark);
+    display: flex;
+    position: relative;
+}
+
+.tab .bg{
+    transition: all .15s linear;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    border-radius: inherit;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-dark)
+}
+
+.tab-menu{
+    padding: .5rem 1.5rem;
+    transition: all .2s linear;
+}
+
+.tab-menu:hover{
+    cursor: pointer
+}
+.tab-menu.active{
+    color: white;
+}
