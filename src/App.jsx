@@ -1,5 +1,5 @@
 import Aside from "./component/aside";
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route, Redirect } from 'react-router-dom'
 import Film from "./pages/film";
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
         <section className="content">
           <Switch>
             <Route path={"/main/film"} component={Film} exact />
+            <Redirect to="/main/film" />
           </Switch>
         </section>
       </div>
