@@ -1,0 +1,14 @@
+.pagination-item{
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    display: grid;
+    place-items: center;
+    margin: 0 .5rem;
+}
+
+.pagination-item.active{
+    background-color: var(--bg-dark);
+    color: white;
+    font-family: 'f-bold';
+}

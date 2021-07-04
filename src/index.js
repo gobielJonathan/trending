@@ -3,16 +3,26 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App.jsx';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from 'react-query';
+import FilmDetail from './pages/film-detail';
 
-const client = new QueryClient()
+const client = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+    }
+  },
+})
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <QueryClientProvider client={client}>
-        <App />
+        <Switch>
+          <Route path={"/film/:name"} component={FilmDetail} exact />
+          <Route path={"/main"} component={App} />
+        </Switch>
       </QueryClientProvider>
     </Router>
   </React.StrictMode>,

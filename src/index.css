@@ -1,3 +1,6 @@
+@import './assets/styles/bootstrap.min.css';
+@import './assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css';
+
 @font-face {
   font-family: 'f-def';
   font-display: swap;
@@ -12,16 +15,14 @@
 
 body {
   font-family: 'f-def';
+  font-size: 14px;
   width: 100%;
   height: 100vh;
-  padding: 2rem;
 }
 
 main {
-  border-radius: 10px;
-  box-shadow: var(--bx);
   height: 100%;
-  display: flex;
+  padding: 2rem;
 }
 
 * {
@@ -39,6 +40,10 @@ a {
   color: inherit;
 }
 
+ a:hover{
+   text-decoration: none;
+ }
+
 .content{
   width: 100%;
   padding: 1.5rem;
@@ -48,4 +53,43 @@ a {
 :root{
   --bx: 0 0 10px rgb(0 0 0 / 20%);
   --bg-dark : #3C5186;
+}
+
+.f-bold{
+  font-family: 'f-bold' !important;
+}
+
+.overflow-x{
+  overflow-x: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 4px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+img{
+  object-fit: cover;
+}
+
+.overflow-y{
+  overflow-y: auto;
 }

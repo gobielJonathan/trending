@@ -4,13 +4,16 @@ import Film from "./pages/film";
 
 function App() {
   return (
-    <main>
-      <Aside />
-      <section className="content">
-      <Switch>
-        <Route path={"/film"} component={Film}  exact/>
-      </Switch>
-      </section>
+    <main >
+      <div className="d-flex w-100 h-100 shadow-sm" style={{ borderRadius: '15px' }}>
+        <Aside />
+        <section className="content">
+          <Switch>
+            <Route path={"/main/film"} component={Film} exact />
+          </Switch>
+        </section>
+      </div>
+
     </main>
   );
 }

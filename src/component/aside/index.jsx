@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom'
 
 const menu = [
     {
-        path: '/film',
+        path: '/main/film',
         title: "Film"
     },
     {
-        path: '/music',
+        path: '/main/music',
         title: "Music"
     },
 ]
@@ -26,7 +26,7 @@ export default function Aside() {
                     to={path}
                 >
                     <div
-                        className={classNames('aside-item', {
+                        className={classNames('aside-item f-bold', {
                             'active': idx == active
                         })}>
                         <span>{title}</span>
