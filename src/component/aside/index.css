@@ -1,0 +1,47 @@
+.aside {
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    width: 250px;
+    height: 100%;
+    padding: 1.5rem 0;
+    background-color: var(--bg-dark);
+}
+
+.aside-item:hover {
+    cursor: pointer;
+}
+
+.aside-item {
+    padding: 1rem 1.5rem;
+    color: white;
+    position: relative;
+}
+
+.aside-item.active::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 40px;
+    height: 20px;
+    background-color: var(--bg-dark);
+    border-bottom-right-radius: 12px;
+    box-shadow: 12px 0 0 0 white;
+}
+
+.aside-item.active::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    width: 40px;
+    height: 20px;
+    background-color: var(--bg-dark);
+    border-top-right-radius: 12px;
+    box-shadow: 12px 0 0 0 white;
+}
+
+.aside-item.active {
+    background-color: white;
+    color: var(--bg-dark);
+}
