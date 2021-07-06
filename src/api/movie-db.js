@@ -8,7 +8,7 @@ export const getTrending = async ({ type = 'movie', time = 'day', page = 1 }) =>
             api_key: process.env.REACT_APP_KEY_MOVIE_DB,
             page: page || 1
         }
-    })
+    }) 
     return data
 }
 
