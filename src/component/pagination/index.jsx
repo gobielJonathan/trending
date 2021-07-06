@@ -8,7 +8,7 @@ export default function Pagination({ page = 1, total_page = 1 }) {
     const { location: { pathname, search } } = useHistory()
     const url = new URLSearchParams(search)
 
-    if (page - 2 > 0) {
+    if (page - 2 > 0) { 
         url.delete('page')
         url.append('page', page - 2)
 
