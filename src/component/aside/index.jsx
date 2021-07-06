@@ -11,7 +11,7 @@ const menu = [
     {
         path: '/main/music',
         title: "Music"
-    },
+    }, 
 ]
 
 export default function Aside() {
