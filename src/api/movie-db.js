@@ -6,7 +6,7 @@ export const getTrending = async ({ type = 'movie', time = 'day', page = 1 }) =>
     const { data } = await axios.get(`https://api.themoviedb.org/3/trending/${type}/${time}`, {
         params: {
             api_key: process.env.REACT_APP_KEY_MOVIE_DB,
-            page: page || 1
+            page: page || 1 
         }
     }) 
     return data
