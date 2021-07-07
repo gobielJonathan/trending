@@ -16,7 +16,7 @@ const menu = [
 ]
 
 export default function Aside() {
-    const [active, setActive] = useState(0)
+    const [active, setActive] = useState(0_00_00)
 
 
     return <aside className={'aside'}>
