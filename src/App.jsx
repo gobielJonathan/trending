@@ -8,7 +8,7 @@ function App() {
       <div className="d-flex w-100 h-100 shadow-sm" style={{ borderRadius: '15px' }}>
         <Aside />
         <section className="content">
-          <Switch>
+          <Switch> 
             <Route path={"/main/film"} component={Film} exact />
           </Switch>
         </section>

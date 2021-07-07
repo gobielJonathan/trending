@@ -12,10 +12,12 @@ const menu = [
         path: '/main/music',
         title: "Music"
     }, 
+    
 ]
 
 export default function Aside() {
     const [active, setActive] = useState(0)
+
 
     return <aside className={'aside'}>
         {
